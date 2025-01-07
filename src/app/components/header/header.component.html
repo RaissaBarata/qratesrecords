@@ -1,0 +1,39 @@
+<header class="header">
+  <div class="header__logo">
+    <img src="images/logo.png" alt="Logo Qrates" />
+  </div>
+
+  <div class="header__content">
+    <nav class="header__nav" [class.open]="isMenuOpen">
+      <ul class="header__menu">
+        <li
+          class="header__menu-item dropdown"
+          (mouseenter)="toggleDropdown(true)"
+          (mouseleave)="toggleDropdown(false)"
+        >
+          <button class="dropdown-btn">
+            Discover <span class="dropdown-icon"></span>
+          </button>
+          <ul class="dropdown-menu" [class.open]="isDropdownOpen">
+            <li>RECORDS</li>
+            <li>CASSETES</li>
+            <li>STORIES</li>
+          </ul>
+        </li>
+        <li class="header__menu-item">Why Qrates</li>
+        <li class="header__menu-item">Search</li>
+        <li class="header__menu-item">Cart</li>
+      </ul>
+
+      <!-- Botões à direita na versão desktop -->
+      <div class="header__actions">
+        <button class="btn">Log in</button>
+        <button class="btn btn--primary">Make a Record</button>
+      </div>
+    </nav>
+
+    <button class="header__hamburger" (click)="toggleMenu()">
+      <span class="hamburger-icon" [class.open]="isMenuOpen"></span>
+    </button>
+  </div>
+</header>
