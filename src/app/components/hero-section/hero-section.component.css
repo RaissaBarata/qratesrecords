@@ -1,0 +1,106 @@
+.hero-section {
+  font-family: "Poppins", sans-serif;
+  padding: 10rem 8rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  gap: 5rem;
+  align-items: flex-start;
+}
+
+.hero-content {
+  margin-right: 25rem;
+  flex: 1;
+  position: relative;
+  top: 10rem;
+  z-index: 2;
+}
+
+.hero-images {
+  flex: 1;
+  position: relative;
+  height: 1000px;
+}
+
+.image-container {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-container.top {
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(5deg);
+  right: 0;
+  top: -50px;
+  border: 3px solid #000000;
+}
+
+.image-container.bottom {
+  width: 700px;
+  height: 600px;
+  transform: rotate(-5deg);
+  z-index: 1;
+  right: 900px;
+  top: 800px;
+  z-index: 1;
+  border: 3px solid #000000;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: 4.8rem;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.custom-underline {
+  font-family: "Fredericka the Great", serif;
+  font-size: 10rem;
+}
+
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: #c7009c;
+  filter: blur(1.5px);
+  border-radius: 200px;
+  transform: rotate(-2.5deg);
+}
