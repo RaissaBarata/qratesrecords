@@ -1,6 +1,6 @@
 .hero-section {
   font-family: "Poppins", sans-serif;
-  padding: 10rem 8rem;
+  padding: 10rem 6rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -9,6 +9,7 @@
   display: flex;
   gap: 5rem;
   align-items: flex-start;
+  height: 1500px;
 }
 
 .hero-content {
@@ -48,8 +49,8 @@
 }
 
 .image-container.bottom {
-  width: 700px;
-  height: 600px;
+  width: 800px;
+  height: 850px;
   transform: rotate(-5deg);
   z-index: 1;
   right: 900px;
