@@ -81,10 +81,33 @@
   font-weight: 500;
   color: #000000;
   margin-bottom: 2rem;
+  white-space: normal;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.typing-letter {
+  opacity: 0; /* Começa invisível */
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.8rem;
+  background-color: #000;
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
 }
 
 .custom-underline {
-  font-family: "Fredericka the Great", serif;
   font-size: 10rem;
 }
 
@@ -104,4 +127,90 @@
   filter: blur(1.5px);
   border-radius: 200px;
   transform: rotate(-2.5deg);
+}
+
+/* Responsividade (tablet e mobile) */
+@media (max-width: 1200px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    height: 2500px;
+  }
+
+  .hero-content {
+    margin-right: 0;
+    top: 0;
+  }
+
+  .hero-images {
+    height: 300px;
+    width: 50%;
+  }
+
+  .image-container.top,
+  .image-container.bottom {
+    position: absolute;
+    width: 1000px;
+    height: 1100px;
+    transform: rotate(10deg);
+    right: -70%;
+    top: -65%;
+    border: 3px solid #000000;
+    z-index: 1;
+  }
+
+  .image-container.bottom {
+    width: 900px;
+    height: 1000px;
+    transform: rotate(-10deg);
+    right: -5%;
+    top: 15%;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 5rem 2rem;
+  }
+
+  .hero-images {
+    height: 500px; /* Altura ajustada para telas menores */
+  }
+
+  .image-container.top {
+    width: 300px;
+    height: 300px;
+    right: 50px;
+    top: 50px;
+  }
+
+  .image-container.bottom {
+    width: 400px;
+    height: 400px;
+    right: 0;
+    top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-images {
+    height: 400px; /* Altura ajustada para telas muito pequenas */
+  }
+
+  .image-container.top {
+    width: 250px;
+    height: 250px;
+    right: 20px;
+    top: 20px;
+  }
+
+  .image-container.bottom {
+    width: 300px;
+    height: 300px;
+    right: 0;
+    top: 50px;
+  }
 }
