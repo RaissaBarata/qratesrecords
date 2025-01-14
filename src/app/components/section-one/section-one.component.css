@@ -1,0 +1,132 @@
+.section-divider {
+  border: 0;
+  height: 2px;
+  background-color: #000;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-top: -10rem;
+}
+
+.section-one {
+  padding: 8rem 0;
+  position: relative;
+  margin-top: -1.5rem;
+  background-color: white;
+  z-index: 1;
+}
+
+.section-container {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  line-height: 1.2;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #000;
+  border-left: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.crowdfunding {
+  background-color: #fff803;
+}
+
+.press-sell {
+  background-color: #82836c;
+  color: white;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: black;
+  border: 1px solid #000;
+}
+
+.card h3 {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem 0;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.learn-more {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.learn-more:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .section-one {
+    padding: 6rem 2rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}

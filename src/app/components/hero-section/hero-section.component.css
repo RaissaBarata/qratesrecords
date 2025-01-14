@@ -9,7 +9,7 @@
   display: flex;
   gap: 5rem;
   align-items: flex-start;
-  height: 1500px;
+  height: 1600px;
 }
 
 .hero-content {
@@ -23,13 +23,11 @@
 .hero-images {
   flex: 1;
   position: relative;
-  height: 1000px;
 }
 
 .image-container {
   position: absolute;
   border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -46,6 +44,7 @@
   right: 0;
   top: -50px;
   border: 3px solid #000000;
+  box-shadow: 50px 20px 40px rgba(0, 0, 0, 0.34);
 }
 
 .image-container.bottom {
@@ -55,8 +54,17 @@
   z-index: 1;
   right: 900px;
   top: 800px;
-  z-index: 1;
+  z-index: 3;
   border: 3px solid #000000;
+  box-shadow: 50px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.image-container.right {
+  width: 400px;
+  height: 450px;
+  z-index: 1;
+  right: 20%;
+  top: 145%;
 }
 
 .hero-tag {
@@ -129,18 +137,75 @@
   transform: rotate(-2.5deg);
 }
 
-/* Responsividade (tablet e mobile) */
-@media (max-width: 1200px) {
+@media (max-width: 1768px) {
+  .hero-content {
+    margin-right: 15rem;
+  }
+  .hero-container {
+    height: 1600px;
+  }
+
+  .image-container.top {
+    width: 850px;
+    height: 900px;
+    right: 0;
+    top: -50px;
+  }
+
+  .image-container.bottom {
+    width: 850px;
+    height: 900px;
+    right: 130%;
+    top: 800px;
+  }
+
+  .image-container.right {
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    right: 10%;
+    top: 140%;
+  }
+}
+
+@media (max-width: 1580px) {
+  .hero-content {
+    margin-right: 8rem;
+  }
+  .hero-container {
+    gap: 0.1rem;
+  }
+
+  .image-container.right {
+    width: 450px;
+    height: 450px;
+    z-index: 1;
+    right: 10%;
+    top: 150%;
+  }
+
+  .image-container.top {
+    width: 720px;
+    right: -10%;
+  }
+
+  .image-container.bottom {
+    width: 720px;
+  }
+}
+
+@media (max-width: 1250px) {
   .hero-container {
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
     align-items: center;
     text-align: center;
-    height: 2500px;
+    height: 2000px;
   }
 
   .hero-content {
-    margin-right: 0;
+    width: 100%;
+    margin-right: 1rem;
     top: 0;
   }
 
@@ -152,8 +217,8 @@
   .image-container.top,
   .image-container.bottom {
     position: absolute;
-    width: 1000px;
-    height: 1100px;
+    width: 800px;
+    height: 900px;
     transform: rotate(10deg);
     right: -70%;
     top: -65%;
@@ -162,55 +227,89 @@
   }
 
   .image-container.bottom {
-    width: 900px;
-    height: 1000px;
+    width: 800px;
+    height: 900px;
     transform: rotate(-10deg);
     right: -5%;
-    top: 15%;
-    z-index: 2;
+    top: 5%;
+    z-index: 3;
+  }
+  .image-container.right {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 1400px;
+  }
+
   .hero-section {
-    padding: 5rem 2rem;
+    padding: 5rem 1rem;
   }
 
   .hero-images {
-    height: 500px; /* Altura ajustada para telas menores */
+    height: 500px;
   }
 
   .image-container.top {
-    width: 300px;
-    height: 300px;
-    right: 50px;
-    top: 50px;
+    width: 500px;
+    height: 550px;
+    right: -20%;
+    top: -50%;
+  }
+
+  .image-container.bottom {
+    width: 500px;
+    height: 550px;
+    right: 20%;
+    top: -5%;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-images {
+    height: 500px;
+  }
+
+  .image-container.top {
+    width: 400px;
+    height: 500px;
+    right: -40%;
+    top: -20%;
   }
 
   .image-container.bottom {
     width: 400px;
-    height: 400px;
-    right: 0;
-    top: 100px;
+    height: 500px;
+    right: 30%;
+    top: 5%;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-images {
-    height: 400px; /* Altura ajustada para telas muito pequenas */
+  .hero-container {
+    height: 1200px;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.5rem;
   }
 
   .image-container.top {
     width: 250px;
-    height: 250px;
-    right: 20px;
-    top: 20px;
+    height: 350px;
+    left: 0;
+    top: -20%;
   }
 
   .image-container.bottom {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
     right: 0;
-    top: 50px;
+    top: 10%;
   }
 }

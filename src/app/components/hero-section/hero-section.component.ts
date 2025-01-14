@@ -9,7 +9,6 @@ import { trigger, transition, style, animate } from '@angular/animations';
   templateUrl: './hero-section.component.html',
   styleUrls: ['./hero-section.component.css'],
   animations: [
-    // Animação para o título (surgir de baixo)
     trigger('fadeInUp', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(20px)' }),
