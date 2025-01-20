@@ -3,6 +3,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { SectionOneComponent } from './components/section-one/section-one.component';
 import { MakingrecordsSectionComponent } from './components/makingrecords-section/makingrecords-section.component';
+import { CustomersupportSectionComponent } from './customersupport-section/customersupport-section.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { MakingrecordsSectionComponent } from './components/makingrecords-sectio
     HeroSectionComponent,
     SectionOneComponent,
     MakingrecordsSectionComponent,
+    CustomersupportSectionComponent,
   ],
 })
 export class AppComponent {

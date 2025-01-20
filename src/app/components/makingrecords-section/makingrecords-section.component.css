@@ -85,18 +85,10 @@
   margin: 0;
 }
 
-.section-title:first-child {
-  margin-top: 0; /* Remove margem do primeiro título */
-}
-
 .service-item {
   border-bottom: 1px solid #e0e0e0;
-  margin: 0.5rem 0; /* Espaço entre itens de serviço */
+  margin: 0.5rem 0;
   background: #fff;
-}
-
-.service-item:last-child {
-  margin-bottom: 1rem; /* Espaço após o último item */
 }
 
 .service-button {
