@@ -5,6 +5,7 @@ import { SectionOneComponent } from './components/section-one/section-one.compon
 import { MakingrecordsSectionComponent } from './components/makingrecords-section/makingrecords-section.component';
 import { CustomersupportSectionComponent } from './customersupport-section/customersupport-section.component';
 import { GrowingcommunitySectionComponent } from './components/growingcommunity-section/growingcommunity-section.component';
+import { ArtistsonqratesSectionComponent } from './components/artistsonqrates-section/artistsonqrates-section.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { GrowingcommunitySectionComponent } from './components/growingcommunity-
     MakingrecordsSectionComponent,
     CustomersupportSectionComponent,
     GrowingcommunitySectionComponent,
+    ArtistsonqratesSectionComponent,
   ],
 })
 export class AppComponent {

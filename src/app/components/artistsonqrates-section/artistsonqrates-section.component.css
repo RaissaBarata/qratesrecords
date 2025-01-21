@@ -1,0 +1,93 @@
+.artistsonqrates-section {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 90%;
+  border: 2px solid #000;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  border-right: 2px solid #000;
+}
+
+.tag {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  max-width: 13rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  border: 2px solid #000;
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.controls button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.artist-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .artistsonqrates-section {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .left-section {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .quote {
+    padding: 50px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+}

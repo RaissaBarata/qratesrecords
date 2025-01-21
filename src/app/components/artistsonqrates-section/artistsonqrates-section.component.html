@@ -1,0 +1,21 @@
+<section class="artistsonqrates-section">
+  <div class="content">
+    <div class="left-section" [style.background-color]="currentColor">
+      <div class="tag">ARTISTS ON QRATES</div>
+      <p class="quote">{{ currentQuote }}</p>
+      <div class="controls">
+        <button
+          *ngFor="let item of items; let i = index"
+          (click)="changeContent(i)"
+          [class.active]="i === activeIndex"
+        >
+          {{ i + 1 }}
+        </button>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <img [src]="currentImage" alt="Artist Image" class="artist-image" />
+    </div>
+  </div>
+</section>
