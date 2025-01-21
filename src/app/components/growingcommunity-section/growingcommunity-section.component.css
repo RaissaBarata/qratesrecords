@@ -1,0 +1,142 @@
+.community-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.content-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.community-tag {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #333;
+  border: 2px solid #000;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 40px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #000;
+}
+
+.browse-button {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  border: 3px solid #000;
+  color: #000;
+  cursor: pointer;
+  margin: 40px 0;
+  box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.34);
+}
+
+.browse-button:hover {
+  background-color: rgb(228, 35, 245);
+}
+
+.gallery-section {
+  width: 98%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 700px;
+  border: 2px solid #000;
+}
+
+.artist-ticker,
+.image-ticker {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.ticker-content {
+  display: flex;
+  white-space: nowrap;
+  transition: transform 0.1s linear;
+}
+
+.ticker-content span {
+  margin-right: 50px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.ticker-content span strong {
+  font-weight: bold;
+}
+
+.ticker-image {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .ticker-content span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .content-section {
+    padding: 40px 20px;
+  }
+}

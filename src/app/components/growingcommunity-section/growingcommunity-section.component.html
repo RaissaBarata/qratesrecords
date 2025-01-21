@@ -1,0 +1,32 @@
+<div class="community-container">
+  <div class="content-section">
+    <div class="community-tag">COMMUNITY</div>
+    <h2>Join a growing community.</h2>
+    <p>
+      We're building a home for the next generation of vinyl lovers.<br />
+      Get in front of fans, connect with artists, labels and stores.
+    </p>
+    <button class="browse-button">BROWSE ARTISTS</button>
+  </div>
+
+  <div class="gallery-section">
+    <div class="gallery-grid">
+      <div
+        class="gallery-item"
+        *ngFor="let artist of displayArtists.slice(0, 8)"
+      >
+        <img [src]="artist.image" alt="Artist Image" />
+      </div>
+    </div>
+
+    <div class="artist-ticker">
+      <div class="ticker-wrapper">
+        <div class="ticker-content" [style.transform]="getTransform()">
+          <span *ngFor="let artist of displayArtists">
+            <strong>{{ artist.name }}</strong> IS ON QRATES
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
