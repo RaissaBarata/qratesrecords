@@ -15,18 +15,18 @@ interface Artist {
 })
 export class GrowingcommunitySectionComponent implements OnInit, OnDestroy {
   artists: Artist[] = [
-    { name: 'CHILLED COW', image: '/images/CHILLEDCOW.png' },
-    { name: 'SOL', image: '/images/SOL.png' },
-    { name: 'VULFPECK', image: '/images/VULFPECK.png' },
-    { name: 'CHILLHOP', image: '/images/CHILLHOP.png' },
-    { name: 'PHANTOM', image: '/images/PHANTOM.png' },
-    { name: 'LO-FI HIP HOP', image: '/images/LOFI.png' },
-    { name: 'STUDIO K', image: '/images/STUDIOK.png' },
-    { name: 'VIBRANT SOUNDS', image: '/images/VIBRANTSOUNDS.png' },
-    { name: 'JAZZY BEATS', image: '/images/JAZZYBEATS.png' },
-    { name: 'ACOUSTIC VIBES', image: '/images/ACOUSTICVIBES.png' },
-    { name: 'FUNKY GROOVES', image: '/images/FUNKYGROOVES.png' },
-    { name: 'SOUNDWAVES', image: '/images/SOUNDWAVES.png' },
+    { name: 'CHILLED COW', image: '/images/CHILLEDCOW.webp' },
+    { name: 'SOL', image: '/images/SOL.webp' },
+    { name: 'VULFPECK', image: '/images/VULFPECK.webp' },
+    { name: 'CHILLHOP', image: '/images/CHILLHOP.webp' },
+    { name: 'PHANTOM', image: '/images/PHANTOM.webp' },
+    { name: 'LO-FI HIP HOP', image: '/images/LOFI.webp' },
+    { name: 'STUDIO K', image: '/images/STUDIOK.webp' },
+    { name: 'VIBRANT SOUNDS', image: '/images/VIBRANTSOUNDS.webp' },
+    { name: 'JAZZY BEATS', image: '/images/JAZZYBEATS.webp' },
+    { name: 'ACOUSTIC VIBES', image: '/images/ACOUSTICVIBES.webp' },
+    { name: 'FUNKY GROOVES', image: '/images/FUNKYGROOVES.webp' },
+    { name: 'SOUNDWAVES', image: '/images/SOUNDWAVES.webp' },
   ];
 
   displayArtists: Artist[] = [];
