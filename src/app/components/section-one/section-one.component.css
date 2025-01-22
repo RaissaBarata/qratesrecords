@@ -147,18 +147,33 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .section-one {
+    padding: 0;
+  }
+
+  .card {
+    padding: 4rem;
+  }
   .press-text {
     font-size: 1rem;
   }
   .press-link {
     font-size: 0.9rem;
   }
+  .press-only {
+    background-color: #000;
+    padding: 8rem 2rem;
+    text-align: center;
+  }
 }
 
-/* Responsividade */
 @media (max-width: 1024px) {
   .section-one {
-    padding: 6rem 2rem;
+    padding: 0rem 0rem;
+  }
+
+  .section-divider {
+    display: none;
   }
 
   .cards-container {
@@ -168,11 +183,5 @@
   .card {
     border-left: 1px solid #000;
     width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
   }
 }

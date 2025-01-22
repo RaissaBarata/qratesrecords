@@ -128,6 +128,10 @@ p {
 }
 
 @media (max-width: 480px) {
+  .community-container {
+    padding: 0 10px;
+  }
+
   .gallery-grid {
     grid-template-columns: 1fr;
   }

@@ -1,0 +1,167 @@
+.vinylstudio-section {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tag {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid white;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.underline {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -5px;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent 10%,
+    rgb(255, 255, 255) 5%,
+    rgb(255, 255, 255) 80%,
+    transparent 5%
+  );
+  transform: skewX(-10deg) rotate(-1deg);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.underline::after {
+  mask: linear-gradient(to right, white, transparent);
+  -webkit-mask: linear-gradient(to right, white, transparent);
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.dollar-sign {
+  position: absolute;
+  right: -18%;
+  top: 12%;
+  transform: translateY(-50%) rotate(2deg);
+  width: 160px;
+}
+
+.vinyl-disc {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.try-it-now {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 20px 150px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.try-it-now:hover {
+  background-color: #ac588a;
+}
+
+@media (max-width: 1200px) {
+  .vinylstudio-section {
+    padding: 80px 100px;
+  }
+
+  .dollar-sign {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .vinylstudio-section {
+    padding: 80px 80px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .vinyl-disc {
+    max-width: 400px;
+  }
+
+  .dollar-sign {
+    width: 120px;
+    right: -10%;
+  }
+
+  .try-it-now {
+    padding: 15px 100px;
+    font-size: 1em;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .vinylstudio-section {
+    padding: 80px 50px;
+  }
+
+  .tag {
+    font-size: 1em;
+    /padding: 5px 8px;
+  }
+
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 0.8em;
+  }
+
+  .vinyl-disc {
+    max-width: 300px;
+  }
+
+  .dollar-sign {
+    display: none;
+  }
+
+  .try-it-now {
+    padding: 10px 80px;
+    font-size: 0.9em;
+  }
+}

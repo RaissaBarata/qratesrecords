@@ -6,6 +6,8 @@ import { MakingrecordsSectionComponent } from './components/makingrecords-sectio
 import { CustomersupportSectionComponent } from './customersupport-section/customersupport-section.component';
 import { GrowingcommunitySectionComponent } from './components/growingcommunity-section/growingcommunity-section.component';
 import { ArtistsonqratesSectionComponent } from './components/artistsonqrates-section/artistsonqrates-section.component';
+import { VinylstudioSectionComponent } from './components/vinylstudio-section/vinylstudio-section.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,8 @@ import { ArtistsonqratesSectionComponent } from './components/artistsonqrates-se
     CustomersupportSectionComponent,
     GrowingcommunitySectionComponent,
     ArtistsonqratesSectionComponent,
+    VinylstudioSectionComponent,
+    FooterComponent,
   ],
 })
 export class AppComponent {
