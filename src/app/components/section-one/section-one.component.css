@@ -181,7 +181,7 @@
 
 @media (max-width: 768px) {
   .section-title {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .card {
@@ -213,6 +213,11 @@
 
   .section-title {
     padding: 0 1rem;
-    margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-title {
+    font-size: 0.8rem;
   }
 }

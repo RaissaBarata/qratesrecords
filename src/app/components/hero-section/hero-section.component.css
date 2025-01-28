@@ -333,20 +333,36 @@
 }
 
 @media (max-width: 480px) {
+  .hero-content {
+    top: 5rem;
+  }
+
+  .hero-images {
+    flex: 0;
+    position: relative;
+  }
+
   .hero-container {
-    padding: 0.8rem;
+    text-align: center;
+    padding: 1.5rem;
   }
   .image-container.top {
-    width: 160px;
-    height: 300px;
-    right: 1%;
-    top: 25%;
+    display: none;
   }
   .hero-title {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 2.5rem;
   }
   .hero-description {
-    font-size: 0.8rem;
-    gap: 8rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .hero-description {
+    font-size: 1.1rem;
   }
 }
