@@ -1,5 +1,5 @@
 .section-divider {
-  border: 0;
+  border: 1px solid #000;
   height: 2px;
   background-color: #000;
   margin: 0 auto;
@@ -145,10 +145,43 @@
   color: #ffcc00;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 1.2rem;
+    margin: 0 auto 2rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    border-left: 1px solid #000;
+    width: 100%;
+  }
+
+  .section-divider {
+    border: 1px solid #000;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-top: -30rem;
+  }
   .section-one {
-    padding: 0;
+    padding: 3rem 0 0;
+    position: relative;
+    margin-top: -1.5rem;
+    background-color: white;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 0.8rem;
   }
 
   .card {
@@ -167,21 +200,19 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .section-one {
-    padding: 0rem 0rem;
-  }
-
+@media (max-width: 600px) {
   .section-divider {
-    display: none;
+    margin-top: -38rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-divider {
+    margin-top: -40rem;
   }
 
-  .cards-container {
-    flex-direction: column;
-  }
-
-  .card {
-    border-left: 1px solid #000;
-    width: 100%;
+  .section-title {
+    padding: 0 1rem;
+    margin: 0 auto 2rem;
   }
 }
